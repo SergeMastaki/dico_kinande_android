@@ -3,4 +3,8 @@
 
     <string name="app_name">Dico kinande</string>
 
+	<string-array name="trans_lang">
+		<item>kinande - français</item>
+		<item>français - kinande</item>
+	</string-array>
 </resources>
