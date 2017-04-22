@@ -4,8 +4,10 @@ import android.app.*;
 import android.os.*;
 import android.widget.*;
 import android.view.*;
+import io.github.sergemastaki.dicokinande.database.*;
+import android.support.v7.app.*;
 
-public class MainActivity extends Activity 
+public class MainActivity extends AppCompatActivity 
 {
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -20,6 +22,8 @@ public class MainActivity extends Activity
 												android.R.layout.simple_spinner_item);									
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spinner.setAdapter(adapter);
+		
+		MyHelper helper = new MyHelper(this);
     }
 
 	@Override

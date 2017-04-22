@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package io.github.sergemastaki.dicokinande;
+package android.support.design;
 
 public final class R {
     public static final class anim {
