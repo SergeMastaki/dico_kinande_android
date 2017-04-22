@@ -3,6 +3,7 @@ package io.github.sergemastaki.dicokinande;
 import android.app.*;
 import android.os.*;
 import android.widget.*;
+import android.view.*;
 
 public class MainActivity extends Activity 
 {
@@ -20,4 +21,14 @@ public class MainActivity extends Activity
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spinner.setAdapter(adapter);
     }
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu)
+	{
+		MenuInflater inflater = getMenuInflater();
+		inflater.inflate(R.menu.main_activity_menu,menu);
+		return true;
+	}
+	
+	
 }
